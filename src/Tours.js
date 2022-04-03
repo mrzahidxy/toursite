@@ -11,13 +11,10 @@ const Tours = ({ tours, deleteTour }) => {
       <div>
         {tours.map(
           (tour) => {
-          return <Tour key={tour.id} {...tour} deleteTour={deleteTour}> </Tour>
+            return <Tour key={tour.id} {...tour} deleteTour={deleteTour}> </Tour>
           }
         )}
       </div>
-
-
-
     </section>
   );
 }
